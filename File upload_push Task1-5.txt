@@ -1,0 +1,68 @@
+Microsoft Windows [Version 10.0.19045.2604]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\SYLVIA>cd C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks>git add .
+warning: in the working copy of 'APITest Managing Variables&Arrays1_Swagger Petstore.json', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   APITest Managing Variables&Arrays1_Swagger Petstore.json
+
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasksgit commit -m "Added API test for Managing Variables and Arrays for Swagger Petstore"
+[main 6f40247] Added API test for Managing Variables and Arrays for Swagger Petstore
+ 1 file changed, 2626 insertions(+)
+ create mode 100644 APITest Managing Variables&Arrays1_Swagger Petstore.json
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.84 KiB | 543.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SylviaIfy/TeamGithub-Basic-Github-Tasks
+   ceeb1d6..6f40247  main -> main
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks>git add .
+warning: in the working copy of 'Trial update.json', LF will be replaced by CRLF the next time Git touches it
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Trial update.json
+
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks>git commit -m "Added API test Managing Variable file and an Updated trial file"
+[main 21fc893] Added API test Managing Variable file and an Updated trial file
+ 1 file changed, 2626 insertions(+)
+ create mode 100644 Trial update.json
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 287 bytes | 57.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SylviaIfy/TeamGithub-Basic-Github-Tasks
+   6f40247..21fc893  main -> main
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\TeamGithub-Basic-Github-Tasks>
