@@ -1,0 +1,176 @@
+
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\SYLVIA>cd C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\Newman exports
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\Newman exports>
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\Newman exports>newman run SwaggerPetstoreTaskCollection.json -e postman_environment.json
+newman
+
+SwaggerPetstoreTaskCollection
+
+□ pet / {petId}
+└ Add a new pet to the store - 8b - i
+  POST https://petstore.swagger.io/v2/pet [200 OK, 609B, 1345ms]
+  √  Confirm Status code is 200
+  √  Status code name has an OK string
+  √  Confirm Body contains id
+
+└ Find pet by ID - 8b - ii
+  GET https://petstore.swagger.io/v2/pet/ [405 Method Not Allowed, 371B, 267ms]
+  1. Confirm Status code is 200
+  2. Status code name has an OK string
+  3. Confirm Body contains id
+
+└ Finds Pets by status - 8b - iii
+  GET https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=available [200 OK, 24.81kB, 489ms]
+  ┌
+  │ {
+  │   id: 9223372016900013000,
+  │   category: { id: 0, name: 'stri
+  │ ng' },
+  │   name: 'fish',
+  │   photoUrls: [ 'string' ],
+  │   tags: [ { id: 0, name: 'string
+  │ ' } ],
+  │   status: 'available'
+  │ }
+  │ 9223372016900013000
+  │ {
+  │   id: 9223372016900012000,
+  │   category: { id: 0, name: 'stri
+  │ ng' },
+  │   name: 'fish',
+  │   photoUrls: [ 'string' ],
+  │   tags: [ { id: 0, name: 'string
+  │ ' } ],
+  │   status: 'available'
+  │ }
+  │ 9223372016900012000
+  │ {
+  │   id: 9223372016900012000,
+  │   category: { id: 0, name: 'stri
+  │ ng' },
+  │   name: 'doggie',
+  │   photoUrls: [ 'string' ],
+  │   tags: [ { id: 0, name: 'string
+  │ ' } ],
+  │   status: 'available'
+  │ }
+  │ 9223372016900012000
+  └
+  √  Confirm Status code is 200
+  √  Status code name has an OK string
+  √  Confirm Body contains id
+
+└ Find purchase order by ID - 8b - iv (also runs DELETE reconfirmation tests)
+  GET https://petstore.swagger.io/v2/store/order/9223372016900012000 [404 Not Found, 386B, 260ms]
+  √  Confirm Status code is 404
+  √  Status code name has a Not Found string
+  √  Confirm Body contains code
+  √  Confirm response Body contains message
+
+└ Delete purchase order by ID - 8b - v
+  DELETE https://petstore.swagger.io/v2/store/order/9223372016900012000 [404 Not Found, 390B, 232ms]
+  √  Confirm Status code is 404
+  √  Status code name has a Not Found string
+  √  Confirm Body contains code
+  √  Confirm response Body contains message
+
+└ Updates a pet in the store with form data
+  POST https://petstore.swagger.io/v2/pet/-6367699 [404 Not Found, 384B, 241ms]
+
+└ Deletes a pet
+  DELETE https://petstore.swagger.io/v2/pet/-6367699 [404 Not Found, 292B, 281ms]
+
+└ uploads an image
+  ┌
+  │ 'Form param `file`, file load error: missing file source'
+  └
+  POST https://petstore.swagger.io/v2/pet/-6367699/uploadImage [500 Internal Server Error, 736B, 283ms]
+
+□ pet
+└ Update an existing pet
+  PUT https://petstore.swagger.io/v2/pet [200 OK, 599B, 252ms]
+
+└ Finds Pets by tags
+  GET https://petstore.swagger.io/v2/pet/findByTags?tags=nostrud in&tags=amet in deserunt aliquip [200 OK, 328B, 239ms]
+
+□ store / order / {orderId}
+└ Find purchase order by ID
+  GET https://petstore.swagger.io/v2/store/order/9223372016900012000 [404 Not Found, 386B, 266ms]
+
+□ store / order
+└ Place an order for a pet
+  POST https://petstore.swagger.io/v2/store/order [200 OK, 467B, 228ms]
+
+□ store
+└ Returns pet inventories by status
+  GET https://petstore.swagger.io/v2/store/inventory [200 OK, 395B, 273ms]
+
+□ user / {username}
+└ Get user by user name
+  GET https://petstore.swagger.io/v2/user/elit deserunt [404 Not Found, 385B, 234ms]
+
+└ Updated user
+  PUT https://petstore.swagger.io/v2/user/elit deserunt [200 OK, 378B, 224ms]
+
+└ Delete user
+  DELETE https://petstore.swagger.io/v2/user/elit deserunt [404 Not Found, 292B, 252ms]
+
+□ user
+└ Create user
+  POST https://petstore.swagger.io/v2/user [200 OK, 378B, 236ms]
+
+└ Logs user into the system
+  GET https://petstore.swagger.io/v2/user/login?username=elit deserunt&password=elit deserunt [200 OK, 471B, 218ms]
+
+└ Logs out current logged in user session
+  GET https://petstore.swagger.io/v2/user/logout [200 OK, 370B, 245ms]
+
+└ Creates list of users with given input array
+  POST https://petstore.swagger.io/v2/user/createWithArray [200 OK, 370B, 231ms]
+
+└ Creates list of users with given input array
+  POST https://petstore.swagger.io/v2/user/createWithList [200 OK, 370B, 274ms]
+
+┌─────────────────────────┬─────────────────────┬─────────────────────┐
+│                         │            executed │              failed │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              iterations │                   1 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│                requests │                  21 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│            test-scripts │                   6 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│      prerequest-scripts │                   0 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              assertions │                  17 │                   3 │
+├─────────────────────────┴─────────────────────┴─────────────────────┤
+│ total run duration: 9s                                              │
+├─────────────────────────────────────────────────────────────────────┤
+│ total data received: 26.19kB (approx)                               │
+├─────────────────────────────────────────────────────────────────────┤
+│ average response time: 312ms [min: 218ms, max: 1345ms, s.d.: 237ms] │
+└─────────────────────────────────────────────────────────────────────┘
+
+  #  failure        detail
+
+ 1.  AssertionErr…  Confirm Status code is 200
+                    expected response to have status code 200 but got 405
+                    at assertion:0 in test-script
+                    inside "pet / {petId} / Find pet by ID - 8b - ii"
+
+ 2.  AssertionErr…  Status code name has an OK string
+                    expected response to have status reason 'OK' but got
+                    'Method Not Allowed'
+                    at assertion:1 in test-script
+                    inside "pet / {petId} / Find pet by ID - 8b - ii"
+
+ 3.  AssertionErr…  Confirm Body contains id
+                    expected '{"code":405,"type":"unknown"}' to include 'id'
+                    at assertion:2 in test-script
+                    inside "pet / {petId} / Find pet by ID - 8b - ii"
+
+C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\Newman exports>cd C:\Users\SYLVIA\Documents\Switch To Software Testing Testify\GitHub files and directories\Newman exports

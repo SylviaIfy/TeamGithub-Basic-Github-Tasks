@@ -1,0 +1,281 @@
+{
+	"id": "b28ea31b-5ec2-44b4-bc28-dead86e3a342",
+	"name": "Swagger Petstore - Assignment",
+	"timestamp": "2023-03-10T02:40:44.542Z",
+	"collection_id": "26273306-5b39be8c-8403-46a3-8b79-e3bf6e87bf6c",
+	"folder_id": 0,
+	"environment_id": "26273306-0eace385-b6a8-4252-a882-6ee0d15382bc",
+	"totalPass": 34,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-10T02:40:38.196Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "244ce9e0-5d07-4efb-86b2-23d10f88c1c8",
+			"name": "Add a new pet to the store - 8b - i",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 272,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Confirm Status code is 200": true,
+				"Status code name has an OK string": true,
+				"Confirm Body contains id": true
+			},
+			"testPassFailCounts": {
+				"Confirm Status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Status code name has an OK string": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Confirm Body contains id": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				224,
+				272
+			],
+			"allTests": [
+				{
+					"Confirm Status code is 200": true,
+					"Status code name has an OK string": true,
+					"Confirm Body contains id": true
+				},
+				{
+					"Confirm Status code is 200": true,
+					"Status code name has an OK string": true,
+					"Confirm Body contains id": true
+				}
+			]
+		},
+		{
+			"id": "d374ec48-0346-4e41-a7dc-32275289db17",
+			"name": "Find pet by ID - 8b - ii",
+			"url": "https://petstore.swagger.io/v2/pet/588716932",
+			"time": 224,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Confirm Status code is 200": true,
+				"Status code name has an OK string": true,
+				"Confirm Body contains id": true
+			},
+			"testPassFailCounts": {
+				"Confirm Status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Status code name has an OK string": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Confirm Body contains id": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				242,
+				224
+			],
+			"allTests": [
+				{
+					"Confirm Status code is 200": true,
+					"Status code name has an OK string": true,
+					"Confirm Body contains id": true
+				},
+				{
+					"Confirm Status code is 200": true,
+					"Status code name has an OK string": true,
+					"Confirm Body contains id": true
+				}
+			]
+		},
+		{
+			"id": "85b22746-09ab-4df3-9d79-5bdf7e540c57",
+			"name": "Finds Pets by status - 8b - iii",
+			"url": "https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=available",
+			"time": 352,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Confirm Status code is 200": true,
+				"Status code name has an OK string": true,
+				"Confirm Body contains id": true
+			},
+			"testPassFailCounts": {
+				"Confirm Status code is 200": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Status code name has an OK string": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Confirm Body contains id": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				258,
+				352
+			],
+			"allTests": [
+				{
+					"Confirm Status code is 200": true,
+					"Status code name has an OK string": true,
+					"Confirm Body contains id": true
+				},
+				{
+					"Confirm Status code is 200": true,
+					"Status code name has an OK string": true,
+					"Confirm Body contains id": true
+				}
+			]
+		},
+		{
+			"id": "183e6528-8df1-497d-97e5-96a7c77d0399",
+			"name": "Find purchase order by ID - 8b - iv",
+			"url": "https://petstore.swagger.io/v2/store/order/588716932",
+			"time": 232,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Confirm Status code is 404": true,
+				"Status code name has a Not Found string": true,
+				"Confirm Body contains code": true,
+				"Confirm response Body contains message": true
+			},
+			"testPassFailCounts": {
+				"Confirm Status code is 404": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Status code name has a Not Found string": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Confirm Body contains code": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Confirm response Body contains message": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				250,
+				232
+			],
+			"allTests": [
+				{
+					"Confirm Status code is 404": true,
+					"Status code name has a Not Found string": true,
+					"Confirm Body contains code": true,
+					"Confirm response Body contains message": true
+				},
+				{
+					"Confirm Status code is 404": true,
+					"Status code name has a Not Found string": true,
+					"Confirm Body contains code": true,
+					"Confirm response Body contains message": true
+				}
+			]
+		},
+		{
+			"id": "0f2c163e-1fbb-4027-820c-c83df082c388",
+			"name": "Delete purchase order by ID - 8b - v",
+			"url": "https://petstore.swagger.io/v2/store/order/588716932",
+			"time": 246,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Confirm Status code is 404": true,
+				"Status code name has a Not Found string": true,
+				"Confirm Body contains code": true,
+				"Confirm response Body contains message": true
+			},
+			"testPassFailCounts": {
+				"Confirm Status code is 404": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Status code name has a Not Found string": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Confirm Body contains code": {
+					"pass": 2,
+					"fail": 0
+				},
+				"Confirm response Body contains message": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				240,
+				246
+			],
+			"allTests": [
+				{
+					"Confirm Status code is 404": true,
+					"Status code name has a Not Found string": true,
+					"Confirm Body contains code": true,
+					"Confirm response Body contains message": true
+				},
+				{
+					"Confirm Status code is 404": true,
+					"Status code name has a Not Found string": true,
+					"Confirm Body contains code": true,
+					"Confirm response Body contains message": true
+				}
+			]
+		}
+	],
+	"count": 2,
+	"totalTime": 2540,
+	"collection": {
+		"requests": [
+			{
+				"id": "244ce9e0-5d07-4efb-86b2-23d10f88c1c8",
+				"method": "POST"
+			},
+			{
+				"id": "d374ec48-0346-4e41-a7dc-32275289db17",
+				"method": "GET"
+			},
+			{
+				"id": "85b22746-09ab-4df3-9d79-5bdf7e540c57",
+				"method": "GET"
+			},
+			{
+				"id": "183e6528-8df1-497d-97e5-96a7c77d0399",
+				"method": "GET"
+			},
+			{
+				"id": "0f2c163e-1fbb-4027-820c-c83df082c388",
+				"method": "DELETE"
+			}
+		]
+	}
+}
